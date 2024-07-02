@@ -17,10 +17,12 @@ operatorButtons.forEach(button => {
     button.addEventListener("click", () => {
         if(firstNumber && !secondNumber){
             operator = button.getAttribute("data-value");
-        } else {
+        } else if(firstNumber && secondNumber) {
             operate(operator, firstNumber, secondNumber);
             firstNumber = `${result}`, secondNumber = "";
             operator = button.getAttribute("data-value");
+        }else {
+            reset();
         }
 
         displayContent();
@@ -126,8 +128,7 @@ function operate(symbol, firstValue, secondValue){
 function displayContent(content){
     if(content){
         displayBox.textContent = content;
-
-        return reset();
+        return;
     }
 
     display = `${firstNumber} ${operator} ${secondNumber}`;
@@ -142,11 +143,11 @@ function del(number){
 
 
 function reset(){
-    displayBox.textContent = result;
     display = "";
     operator = "";
     result = null;
     float = false;
     firstNumber = "";
     secondNumber = ""; 
+    displayBox.textContent = "";
 }
