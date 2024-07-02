@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100dvh;
+    background-color: lightsteelblue;
+}
+
+button {
+    padding: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: .5em;
+    background-color: snow;
+}
+
+.calculator {
+    padding: 1em;
+    height: 500px;
+    border-radius: 1em;
+    margin-inline: auto;
+    width: min(100% - 4em, 500px);
+
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.calculator > * {
+    flex-grow: 1;
+}
+
+.display {
+    padding: 1em;
+    color: snow;
+    font-size: 1.5em;
+    border-radius: 1em;
+    background-color: steelblue;    
+}
+
+.keypad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+    padding: 1em;
+    border-radius: 1em;
+    background-color: steelblue;
+}
+
+.keypad > * {
+    flex-grow: 1;
+    flex-basis: 22%;
+}
+
+.equal {
+    color: white;
+    background-color: crimson;
+}
+
+.del, .reset {
+    color: white;
+    background-color: darkblue;
+}
