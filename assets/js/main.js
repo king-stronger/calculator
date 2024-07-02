@@ -66,6 +66,7 @@ floatButton.addEventListener("click", () => {
         float = true;
     } else if(operator && !secondNumber.includes(".")){
         secondNumber += floatButton.getAttribute("data-value");
+        float = true;
     }
 
     return displayContent();
