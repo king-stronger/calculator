@@ -54,24 +54,6 @@ You can view a live demo of the calculator [here](#). *(Replace `#` with the lin
 - **Validation**: Ensures valid inputs (e.g., prevents division by zero).
 - **Display**: Updates in real-time as the user interacts with the calculator.
 
-## Contributing
-
-If you'd like to contribute:
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. Commit your changes:
-    ```bash
-    git commit -m "Description of feature"
-    ```
-4. Push to the branch:
-    ```bash
-    git push origin feature-name
-    ```
-5. Open a pull request.
-
 ## License
 
 This project is not licensed. If you wish to reuse or modify it, you are free to do so, but please give proper credit.
